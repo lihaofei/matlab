@@ -1,0 +1,4 @@
+1.直接导入
+ mod = py.importlib.import_module(module名称）
+2.重新导入
+    py.importlib.reload(mod)
