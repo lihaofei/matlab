@@ -5,9 +5,9 @@
 # 参考https://zhuanlan.zhihu.com/p/392728491
 import matlab
 import matlab.engine               # 在Python中导入Matlab引擎
-
+path = 'D:/File_Pycharm/py35_prj/python_matlab'
 eng = matlab.engine.start_matlab() # 启动Matlab引擎，命名为eng
-eng.cd('D:/File_Pycharm/py35_prj/python_matlab',nargout=0)
+eng.cd(path,nargout=0)
 # eng.ini_operating_point(nargout=0) # 通过eng运行写好的m文件 “ini_operating_point.m”，nargout=0表示不返回输出。
 #                                    # Note: 此m文件需要在ptyhon的启动界面下。、
 # Q_ref='sddd'
