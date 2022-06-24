@@ -1,5 +1,5 @@
 function [Inport,outport,constant] =  FindPortdemo()
-path='D:\File_Pycharm\py35_prj\FindPort.slx'
+path='D:\File_Pycharm\py35_prj\python_matlab\FindPort.slx'
 open_system(path)
 signal = find_system('FindPort')
 Inport = find_system(signal(1),'BlockType','Inport')
